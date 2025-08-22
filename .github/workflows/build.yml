@@ -1,0 +1,54 @@
+name: 🛠️ Build + Test
+
+on:
+  push:
+    paths:
+      - 'build/**'
+      - 'icons/*.svg'
+      - 'patches/**'
+      - 'src/**'
+      - '.bun-version'
+      - 'bunfig.toml'
+      - 'package.json'
+      - 'sheriff.config.ts'
+      - '!*.md'
+
+  pull_request:
+    paths:
+      - 'build/**'
+      - 'icons/*.svg'
+      - 'patches/**'
+      - 'src/**'
+      - '.bun-version'
+      - 'bunfig.toml'
+      - 'package.json'
+      - 'sheriff.config.ts'
+      - '!*.md'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build-and-test:
+    name: Build & Test Extension
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: 🔧 Setup Bun
+        uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2
+        with:
+          bun-version-file: ".bun-version"
+
+      - name: 📦 Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: 🚀 Test + Build
+        id: build
+        run: |
+          bun test
+          bun run vscode:prepublish
