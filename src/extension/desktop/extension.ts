@@ -5,13 +5,20 @@ import { initTranslations, logger } from '../../core';
 import { disableLogObserver, observeLogs } from '../logging/logger';
 import { detectConfigChanges } from '../tools/changeDetection';
 import { registered } from '../tools/registered';
-
+import * as vscode from 'vscode';
+import { changeFolderColor } from '../commands/folderColor';
 /**
  * This method is called when the extension is activated.
  * It initializes the core functionality of the extension.
  */
 export const activate = async (context: ExtensionContext) => {
   try {
+    context.subscriptions.push(
+    vscode.commands.registerCommand(
+      'cyber-icon-theme.changeFolderColor',
+      changeFolderColor
+    )
+  );
     observeLogs();
 
     await initTranslations(env.language);
@@ -28,6 +35,7 @@ export const activate = async (context: ExtensionContext) => {
         async (event) => await detectConfigChanges(event, context)
       )
     );
+
 
     logger.info('Extension activated!');
   } catch (error) {

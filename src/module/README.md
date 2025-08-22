@@ -4,9 +4,9 @@
   <img src="https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/logo.png" alt="logo" width="120">
 </p>
 
-<h1 align="center">Material Icon Theme</h1>
+<h1 align="center">Cyber Icon Theme</h1>
 
-<p align="center"><em>Material Design icons for Visual Studio Code</em></p>
+<p align="center"><em>Cyber Design icons for Visual Studio Code</em></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/cyber-icon-theme"><img src="https://img.shields.io/npm/v/cyber-icon-theme?style=for-the-badge&colorA=263238&colorB=43A047&label=VERSION" alt="NPM Version"></a>
@@ -17,7 +17,7 @@
 <br />
 
 
-<p align="center">Enjoying Material Icon Theme? Support the project by starring it or becoming a sponsor!</p>
+<p align="center">Enjoying Cyber Icon Theme? Support the project by starring it or becoming a sponsor!</p>
 
 <p align="center">
   <a href="https://github.com/sponsors/waheeb71"><img src="https://img.shields.io/badge/Sponsor-GitHub-blue?logo=github-sponsors&style=for-the-badge&colorA=263238&colorB=EC407A" alt="Sponsor on GitHub"></a>
@@ -39,7 +39,7 @@
 
 ## Description
 
-This npm module provides all icons from the [VS Code Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=waheeb71.cyber-icon-theme) as an npm package. The icons are available as SVG files and can be used in any web project.
+This npm module provides all icons from the [VS Code Cyber Icon Theme](https://marketplace.visualstudio.com/items?itemName=waheeb71.cyber-icon-theme) as an npm package. The icons are available as SVG files and can be used in any web project.
 
 ## Installation
 
@@ -69,7 +69,7 @@ import { Manifest } from 'cyber-icon-theme';
 
 ### Configure the icons
 
-When generating the manifest, you can pass configuration options to the `generateManifest` function. These options are the same as those used in the VS Code Material Icon Theme extension:
+When generating the manifest, you can pass configuration options to the `generateManifest` function. These options are the same as those used in the VS Code Cyber Icon Theme extension:
 
 ```typescript
 import { type ManifestConfig, type IconAssociations, type IconPackValue, generateManifest } from 'cyber-icon-theme';
@@ -96,7 +96,7 @@ Not all configuration options are required. The `generateManifest` function uses
 
 ## Icon packs
 
-The Material Icon Theme provides different icon packs. The icon pack can be changed by setting the `activeIconPack` in the configuration options. To get a list of all available icon packs, the `getIconPacks` function can be used:
+The Cyber Icon Theme provides different icon packs. The icon pack can be changed by setting the `activeIconPack` in the configuration options. To get a list of all available icon packs, the `getIconPacks` function can be used:
 
 ```typescript
 import { availableIconPacks, type IconPackValue } from 'cyber-icon-theme';
@@ -108,15 +108,9 @@ console.log('Available icon packs:', iconPacks);
 
 ## Icon sources
 
-- [Material Design Icons](https://pictogrammers.com/library/mdi/)
-- [Material Symbols](https://fonts.google.com/icons)
+- [Cyber Design Icons](https://pictogrammers.com/library/mdi/)
+- [Cyber Symbols](https://fonts.google.com/icons)
 
-## Contributors
-
-Thank you to all our amazing contributors!
-Your support helps make Material Icon Theme better for everyone.
-
-[![Contributors](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/contributors.png)](https://github.com/waheeb71/vscode-cyber-icon-theme/graphs/contributors)
 
 ## Contributing
 
@@ -147,7 +141,7 @@ We welcome contributions of all kinds! Whether you want to add new icons, improv
   <a href="https://github.com/waheeb71/vscode-cyber-icon-theme"><img src="https://img.shields.io/github/stars/waheeb71/vscode-cyber-icon-theme?style=for-the-badge&label=Star%20on%20GitHub&colorA=263238&colorB=1976D2" alt="Star on GitHub"></a>
 </p>
 <p align="center">
-  <em>Enjoying Material Icon Theme? Support the project by starring it or becoming a sponsor!</em>
+  <em>Enjoying Cyber Icon Theme? Support the project by starring it or becoming a sponsor!</em>
 </p>
 
 <!-- markdownlint-restore -->

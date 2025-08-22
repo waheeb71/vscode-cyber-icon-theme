@@ -13,7 +13,7 @@ We provide security updates exclusively for the latest version of the project. O
 
 If you discover a security issue, please report it privately using the following method:
 
-- **Email:** [material-icons-extensions@googlegroups.com](mailto:material-icons-extensions@googlegroups.com)
+- **Email:** [Cyber-icons-extensions@googlegroups.com](mailto:Cyber-icons-extensions@googlegroups.com)
 - Provide:
   - A description of the issue.
   - Steps to reproduce it.

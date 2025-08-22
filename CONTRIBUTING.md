@@ -17,7 +17,7 @@ Glad you're here and interested in expanding this project 🎉 In order to make 
   - [How tos](#how-tos)
     - [Create icon as SVG](#create-icon-as-svg)
     - [Known icon sources](#known-icon-sources)
-    - [Use Material Design colors](#use-material-design-colors)
+    - [Use Cyber Design colors](#use-cyber-design-colors)
     - [Design folder icons](#design-folder-icons)
     - [Icon spacing](#icon-spacing)
     - [Assignment to file and folder names and language ids](#assignment-to-file-and-folder-names-and-language-ids)
@@ -77,7 +77,7 @@ Generating the changelog based on the commit messages saves time and helps to ke
 ### Checklist
 
 1. [ ] Create icon as SVG ([how to](#create-icon-as-svg))
-2. [ ] Icon color fits to Material Design ([how to](#use-material-design-colors))
+2. [ ] Icon color fits to Cyber Design ([how to](#use-cyber-design-colors))
 3. [ ] SVG has some space around the icon ([how to](#icon-spacing))
 4. [ ] Unique assignment to file and folder names ([how to](#assignment-to-file-and-folder-names-and-language-ids))
 5. [ ] Provide separate icons for color themes if necessary ([how to](#icons-for-color-themes))
@@ -115,16 +115,16 @@ Of course, there is also the possibility to add existing SVGs. Mostly, however, 
 
 ### Known icon sources
 
-- [Material Design Icons](https://pictogrammers.com/library/mdi/)
-- [Material Symbols](https://fonts.google.com/icons)
+- [Cyber Design Icons](https://pictogrammers.com/library/mdi/)
+- [Cyber Symbols](https://fonts.google.com/icons)
 
-### Use Material Design colors
+### Use Cyber Design colors
 
-An important success factor of this icon extension is the fact that all colors fit together harmoniously. This is due to the fact that all icons exist only from colors of the [Material Design color palette](https://material.io/design/color/the-color-system.html#tools-for-picking-colors). This creates nice contrasts and the icons are easily recognizable.
+An important success factor of this icon extension is the fact that all colors fit together harmoniously. This is due to the fact that all icons exist only from colors of the [Cyber Design color palette](https://Cyber.io/design/color/the-color-system.html#tools-for-picking-colors). This creates nice contrasts and the icons are easily recognizable.
 
-Now it often happens that many programming languages already have icons with their own colors. To find the matching color from the Material Design color palette based on a known color, there is the [Material Color Converter](https://waheeb71.github.io/material-color-converter/). With its help any color can be converted into a Material Design color.
+Now it often happens that many programming languages already have icons with their own colors. To find the matching color from the Cyber Design color palette based on a known color, there is the [Cyber Color Converter](https://waheeb71.github.io/Cyber-color-converter/). With its help any color can be converted into a Cyber Design color.
 
-You can check if your changed (i.e. not yet committed) icon fits the Material Design color palette by running the following command:
+You can check if your changed (i.e. not yet committed) icon fits the Cyber Design color palette by running the following command:
 
 ```sh
 bun run check-colors
@@ -147,9 +147,9 @@ When designing folder icons there are also a few points to consider. A folder ic
 
 <img src="./images/how-tos/folder-icon-parts.svg" alt="An example of a folder" width="300px" />
 
-For the motive, only colors from the second row in the [color palette](https://waheeb71.github.io/material-color-converter/) are allowed. For the background choose a slightly darker hue (mostly in rows 4-6 in the palette).
+For the motive, only colors from the second row in the [color palette](https://waheeb71.github.io/Cyber-color-converter/) are allowed. For the background choose a slightly darker hue (mostly in rows 4-6 in the palette).
 
-<img src="./images/how-tos/pick-folder-colors.png" alt="Material color palette" width="500px" />
+<img src="./images/how-tos/pick-folder-colors.png" alt="Cyber color palette" width="500px" />
 
 This uniform color selection makes the folder icons look more consistent and fit well together. This ensures a good quality of the icons.
 
@@ -410,9 +410,9 @@ That's it. We don't need to create a new SVG file. The extension will automatica
 
 The same technique can be applied to folder icons using the `clone` attribute in the configuration.
 
-You might have noticed that we are using aliases for the colors. These aliases correspond to the Material Design color palette.
+You might have noticed that we are using aliases for the colors. These aliases correspond to the Cyber Design color palette.
 
-You can find a list of all available color aliases in the [materialPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/materialPalette.ts) file.
+You can find a list of all available color aliases in the [CyberPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/CyberPalette.ts) file.
 
 #### Preventing recoloring in cloned icons
 
@@ -494,7 +494,7 @@ The available log levels are:
 - `info`: Only info logs are logged
 - `debug`: All logs are logged
 
-Per default the logging is disabled as it can slow down the extension. If logging is enabled, the logs can be found in the output panel of VS Code under "Material Icon Theme".
+Per default the logging is disabled as it can slow down the extension. If logging is enabled, the logs can be found in the output panel of VS Code under "Cyber Icon Theme".
 
 > [!NOTE]
 > Please restart the extension after changing the logging settings to apply the changes.

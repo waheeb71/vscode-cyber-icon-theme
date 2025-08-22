@@ -24,7 +24,7 @@ jobs:
         with:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            material-colors.yml
+            Cyber-colors.yml
             icons/
 
       - name: 🔄 Fetch target branch
@@ -35,4 +35,4 @@ jobs:
         id: color-check
         run: |
           svgFiles=$(git diff origin/$TARGET_BRANCH --diff-filter=ACMRTUX  --name-only | grep '.svg$')
-          npx svg-color-linter --config material-colors.yml ${svgFiles}
+          npx svg-color-linter --config Cyber-colors.yml ${svgFiles}

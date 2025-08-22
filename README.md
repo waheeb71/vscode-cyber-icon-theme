@@ -36,16 +36,6 @@
 
 <br /><br />
 
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Customization](#customization)
-- [Commands](#commands)
-- [Icon sources](#icon-sources)
-- [Contributors](#contributors)
-- [Contributing](#contributing)
-- [Related extensions](#related-extensions)
 
 ## Features
 
@@ -61,20 +51,19 @@
   [![Install in VS Code](https://img.shields.io/badge/Install%20in%20VS%20Code-Click%20to%20Install-4CAF50?style=for-the-badge&logo=visualstudiocode&logoColor=white&colorA=263238&colorB=4CAF50)](https://marketplace.visualstudio.com/items?itemName=waheeb71.cyber-icon-theme)
 
 2. **Activate the icon theme**<br>
-  Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS), type `Material Icons: Activate Icon Theme`, and select it.
+  Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS), type `Cyber icons: Activate Icon Theme`, and select it.
 
 3. **Enjoy your new icons**<br>
-  Your editor will now display beautiful, customizable Material Design icons for files and folders.
+  Your editor will now display beautiful, customizable Cyber Design icons for files and folders.
 
 ## Customization
 
-You can personalize the appearance of Material Icon Theme by adjusting colors, icon styles, opacity, and more to match your preferences or workflow.
+You can personalize the appearance of Cyber Icon Theme by adjusting colors, icon styles, opacity, and more to match your preferences or workflow.
 
 ### Customize file & folder color
 
 You can change the color of the default file and folder icons using the command palette:
 
-![custom folder colors](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/set-folder-color.gif)
 
 or via user settings:
 
@@ -86,8 +75,6 @@ or via user settings:
 ### Folder themes
 
 You can change the design of the folder icons using the command palette:
-
-![folder themes](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/set-folder-theme.gif)
 
 or via user settings:
 
@@ -180,7 +167,7 @@ This will create two new icons called `rust-mod` and `rust-lib` that are associa
 
 ![cloned file icons](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/how-tos/cloned-file-icons-example.png)
 
-- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases in the [materialPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/materialPalette.ts).
+- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the Cyber palette, you can check the full list of allowed aliases in the [CyberPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/CyberPalette.ts).
 - You can check the full list of available icons to be used as the `base` in the [fileIcons.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/icons/fileIcons.ts).
 
 #### Folder associations
@@ -244,7 +231,7 @@ This will create two new icons called `users-admin` and `roles-admin` that are a
 
 ![cloned folder icons](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/how-tos/cloned-folder-icons-example.png)
 
-- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases in the [materialPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/materialPalette.ts).
+- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the Cyber palette, you can check the full list of allowed aliases in the [CyberPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/CyberPalette.ts).
 - You can check the full list of available icons to be used as the `base` in the [folderIcons.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/icons/folderIcons.ts).
 
 #### Root folder associations
@@ -300,14 +287,9 @@ This will create a new icon called `ahk-clone` which is associated with the lang
 
 ![cloned language icons](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/how-tos/cloned-language-icons-example.png)
 
-- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases in the [materialPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/materialPalette.ts).
+- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the Cyber palette, you can check the full list of allowed aliases in the [CyberPalette.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/generator/clones/utils/color/CyberPalette.ts).
 - You can check the full list of available icons to be used as the `base` in the [fileIcons.ts](https://github.com/waheeb71/vscode-cyber-icon-theme/blob/main/src/core/icons/fileIcons.ts).
 
-## Commands
-
-Press `Ctrl-Shift-P` to open the command palette and type `Material Icons`.
-
-![commands](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/commandPalette.png)
 
 ### Command List
 
@@ -327,15 +309,9 @@ Press `Ctrl-Shift-P` to open the command palette and type `Material Icons`.
 
 ## Icon sources
 
-- [Material Design Icons](https://pictogrammers.com/library/mdi/)
-- [Material Symbols](https://fonts.google.com/icons)
+- [Cyber Design Icons](https://pictogrammers.com/library/mdi/)
+- [Cyber Symbols](https://fonts.google.com/icons)
 
-## Contributors
-
-Thank you to all our amazing contributors!
-Your support helps make Material Icon Theme better for everyone.
-
-[![Contributors](https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/contributors.png)](https://github.com/waheeb71/vscode-cyber-icon-theme/graphs/contributors)
 
 ## Contributing
 
@@ -357,9 +333,9 @@ We welcome contributions of all kinds! Whether you want to add new icons, improv
 
 ## Related extensions
 
-- [Material Icons for GitHub](https://github.com/waheeb71/material-icons-browser-extension)
-- [Material Product Icons](https://github.com/waheeb71/vscode-material-product-icons)
-- [Material Icons NPM Package](https://www.npmjs.com/package/cyber-icon-theme)
+- [Cyber icons for GitHub](https://github.com/waheeb71/Cyber-icons-browser-extension)
+- [Cyber Product Icons](https://github.com/waheeb71/vscode-Cyber-product-icons)
+- [Cyber icons NPM Package](https://www.npmjs.com/package/cyber-icon-theme)
 
 <br />
 
@@ -371,5 +347,5 @@ We welcome contributions of all kinds! Whether you want to add new icons, improv
   <a href="https://github.com/waheeb71/vscode-cyber-icon-theme"><img src="https://img.shields.io/github/stars/waheeb71/vscode-cyber-icon-theme?style=for-the-badge&label=Star%20on%20GitHub&colorA=263238&colorB=1976D2" alt="Star on GitHub"></a>
 </p>
 <p align="center">
-  <em>Enjoying Material Icon Theme? Support the project by starring it or becoming a sponsor!</em>
+  <em>Enjoying Cyber Icon Theme? Support the project by starring it or becoming a sponsor!</em>
 </p>
