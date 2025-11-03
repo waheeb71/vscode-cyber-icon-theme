@@ -2,7 +2,7 @@ import type { Translation } from '../../models/i18n/translation';
 
 export const translation: Translation = {
   activate: '激活',
-  activated: 'Material主題圖標已激活',
+  activated: 'Cyber主題圖標已激活',
   iconPacks: {
     selectPack: '選擇圖標包',
     description: '選擇％0符號',

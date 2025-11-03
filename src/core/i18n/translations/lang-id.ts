@@ -2,7 +2,7 @@ import type { Translation } from '../../models/i18n/translation';
 
 export const translation: Translation = {
   activate: 'Aktifkan',
-  activated: 'Tema Ikon Material aktif.',
+  activated: 'Tema Ikon Cyber aktif.',
   iconPacks: {
     selectPack: 'Pilih paket ikon',
     description: "Pilih paket ikon '%0'",

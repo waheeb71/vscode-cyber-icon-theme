@@ -46,7 +46,7 @@ const fetchContributors = (
           res.headers?.link?.toString() ?? ''
         );
         console.log(
-          '> Material Icon Theme:',
+          '> Cyber Icon Theme:',
           yellow(
             `[${page}/${
               lastPage ? lastPage[1] : +prevPage[1] + 1
@@ -91,12 +91,12 @@ const init = async () => {
 
   if (contributorsList.length > 0) {
     console.log(
-      '> Material Icon Theme:',
+      '> Cyber Icon Theme:',
       green('Successfully fetched all contributors from GitHub!')
     );
   } else {
     console.log(
-      '> Material Icon Theme:',
+      '> Cyber Icon Theme:',
       red('Error: Could not fetch contributors from GitHub!')
     );
     throw Error();
@@ -104,17 +104,17 @@ const init = async () => {
   const outputPath = await createContributorsList(contributorsList);
 
   // create the image
-  console.log('> Material Icon Theme:', yellow('Creating image...'));
+  console.log('> Cyber Icon Theme:', yellow('Creating image...'));
   const fileName = 'contributors';
   createScreenshot(outputPath, fileName)
     .then(() => {
       console.log(
-        '> Material Icon Theme:',
+        '> Cyber Icon Theme:',
         green(`Successfully created ${fileName} image!`)
       );
     })
     .catch((error) => {
-      console.log('> Material Icon Theme:', red(`Error: ${error}`));
+      console.log('> Cyber Icon Theme:', red(`Error: ${error}`));
       throw Error(red(`Error while creating ${fileName} image`));
     });
 };

@@ -3,7 +3,7 @@
 
   "displayName": "Cyber Icon Theme",
   "description": "Cyber-themed icons for Visual Studio Code",
-"version": "2.0.0",
+"version": "2.0.1", 
   "license": "MIT",
   "scripts": {
     "precompile": "rimraf dist && bun run verify",

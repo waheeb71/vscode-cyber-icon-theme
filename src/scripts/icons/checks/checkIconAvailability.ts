@@ -194,12 +194,12 @@ const handleErrors = () => {
     wrongIconNames.languageIcons.length;
   if (amountOfErrors > 0) {
     console.log(
-      '> Material Icon Theme:',
+      '> Cyber Icon Theme:',
       red(`Found ${amountOfErrors} error(s) in the icon configuration!`)
     );
   } else {
     console.log(
-      '> Material Icon Theme:',
+      '> Cyber Icon Theme:',
       green('Passed icon availability checks!')
     );
   }

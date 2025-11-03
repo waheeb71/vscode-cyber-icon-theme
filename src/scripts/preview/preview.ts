@@ -78,7 +78,7 @@ const savePreview = async (
   createScreenshot(filePath, fileName)
     .then(() => {
       console.log(
-        '> Material Icon Theme:',
+        '> Cyber Icon Theme:',
         green(`Successfully created ${fileName} preview image!`)
       );
     })

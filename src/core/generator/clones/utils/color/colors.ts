@@ -2,8 +2,8 @@ import chroma, { type Color } from 'chroma-js';
 import { type INode } from 'svgson';
 import { getStyle, traverse } from '../cloning';
 import {
-  closerMaterialColorTo,
-  getMaterialColorByKey,
+  closerCyberColorTo,
+  getCyberColorByKey,
 } from './materialPalette';
 
 /** Get all the colors used in the SVG node as a `Set` list. **/
@@ -81,13 +81,13 @@ export const isValidColor = (color?: string): boolean => {
  *
  * Orders the list of colors from dark to light and replaces the darkest
  * color with the base color. Then uses the hue of the base color and
- * the material palette to find the most appropriate color for the rest
+ * the Cyber palette to find the most appropriate color for the rest
  * in the list.
  */
 export const replacementMap = (baseColor: string, colors: Set<string>) => {
   if (!isValidColor(baseColor)) {
-    // try to get it from the material palette by key
-    const matCol = getMaterialColorByKey(baseColor);
+    // try to get it from the Cyber palette by key
+    const matCol = getCyberColorByKey(baseColor);
     if (matCol === undefined) {
       throw new Error(`Invalid color: ${baseColor}`);
     }
@@ -112,7 +112,7 @@ export const replacementMap = (baseColor: string, colors: Set<string>) => {
     // if it's a simple, 2-color icon, we also retain the saturation
     // from the base color. This helps us better adhere to the
     // same-palette rule in the extension's guidelines; keeping both
-    // colors within the same "color column" of the material palette.
+    // colors within the same "color column" of the Cyber palette.
     // This mainly affects folder icons, which usually have 2-color
     // designs.
     if (orderedColors.length === 2) {
@@ -129,7 +129,7 @@ export const replacementMap = (baseColor: string, colors: Set<string>) => {
       newColor = lighten(newColor, 0.1);
     }
 
-    const matCol = closerMaterialColorTo(newColor.hex());
+    const matCol = closerCyberColorTo(newColor.hex());
     latestColor = chroma(matCol);
 
     replacement.set(orderedColors[i], matCol);

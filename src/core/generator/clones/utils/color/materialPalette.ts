@@ -1,7 +1,7 @@
 import chroma from 'chroma-js';
 import { isValidColor } from './colors';
 
-export const materialPalette = {
+export const CyberPalette = {
   white: '#FFFFFF',
   black: '#000000',
   'red-50': '#FFEBEE',
@@ -261,23 +261,23 @@ export const materialPalette = {
 };
 
 /**
- * Gets the material color from the material palette
- * @param key the key of the material color e.g. 'blue-grey-500'
+ * Gets the Cyber color from the Cyber palette
+ * @param key the key of the Cyber color e.g. 'blue-grey-500'
  */
-export const getMaterialColorByKey = (key: string): string | undefined => {
-  if (key in materialPalette) {
-    return materialPalette[key as keyof typeof materialPalette];
+export const getCyberColorByKey = (key: string): string | undefined => {
+  if (key in CyberPalette) {
+    return CyberPalette[key as keyof typeof CyberPalette];
   }
 
   return undefined;
 };
 
 /**
- * Given a color, returns the closest material color from the
- * material palette.
+ * Given a color, returns the closest Cyber color from the
+ * Cyber palette.
  */
-export const closerMaterialColorTo = (color: string): string => {
-  const palette = Object.values(materialPalette);
+export const closerCyberColorTo = (color: string): string => {
+  const palette = Object.values(CyberPalette);
 
   if (!isValidColor(color)) {
     throw new Error(`The given color "${color}" is not valid!`);

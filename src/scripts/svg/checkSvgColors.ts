@@ -23,7 +23,7 @@ const checkColors = async () => {
       const command = [
         'svg-color-linter',
         '--config',
-        'material-colors.yml',
+        'Cyber-colors.yml',
         ...svgFiles.split(' '),
       ];
       const linterProcess = spawn(command);

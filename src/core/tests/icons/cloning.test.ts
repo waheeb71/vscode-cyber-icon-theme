@@ -16,8 +16,8 @@ import {
   orderDarkToLight,
 } from './../../generator/clones/utils/color/colors';
 import {
-  closerMaterialColorTo,
-  materialPalette as palette,
+  closerCyberColorTo,
+  CyberPalette as palette,
 } from '../../generator/clones/utils/color/materialPalette';
 import { padWithDefaultConfig } from '../../generator/config/defaultConfig';
 import {
@@ -58,22 +58,22 @@ describe('cloning: color manipulation', () => {
     });
   });
 
-  describe('#closerMaterialColorTo(..)', () => {
-    it('should return the closest material color to the given color', () => {
+  describe('#closerCyberColorTo(..)', () => {
+    it('should return the closest Cyber color to the given color', () => {
       const color = '#e24542';
-      const result = closerMaterialColorTo(color);
+      const result = closerCyberColorTo(color);
       expect(result).toStrictEqual(palette['red-600']);
     });
 
-    it('should return the same color if it is already a material color', () => {
+    it('should return the same color if it is already a Cyber color', () => {
       const color = palette['indigo-500'];
-      const result = closerMaterialColorTo(color);
+      const result = closerCyberColorTo(color);
       expect(result).toStrictEqual(color);
     });
 
     it('should throw an error if the given color is not valid', () => {
       const color = 'bad-color';
-      expect(() => closerMaterialColorTo(color)).toThrowError(
+      expect(() => closerCyberColorTo(color)).toThrowError(
         'The given color "bad-color" is not valid!'
       );
     });
