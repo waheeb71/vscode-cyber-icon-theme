@@ -24,7 +24,7 @@
   <a href="https://github.com/waheeb71/vscode-cyber-icon-theme"><img src="https://img.shields.io/github/stars/waheeb71/vscode-cyber-icon-theme?style=for-the-badge&label=Star%20on%20GitHub&colorA=263238&colorB=1976D2" alt="Star on GitHub"></a>
 </p>
 
-<br 
+<br
 
 
 ## Features
