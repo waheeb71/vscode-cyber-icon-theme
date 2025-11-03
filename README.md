@@ -26,15 +26,6 @@
 
 <br />
 
-### File icons
-
-<details><summary>🏞️ <b>Show all available file icons</b></summary><br/><img src="https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/fileIcons.png" alt="file icons"></details>
-
-### Folder icons
-
-<details><summary>🏞️ <b>Show all available folder icons</b></summary><br/><img src="https://raw.githubusercontent.com/waheeb71/vscode-cyber-icon-theme/main/images/folderIcons.png" alt="folder icons"></details>
-
-<br /><br />
 
 
 ## Features
