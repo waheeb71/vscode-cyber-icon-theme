@@ -113,10 +113,11 @@ const init = async () => {
         green(`Successfully created ${fileName} image!`)
       );
     })
-    .catch((error) => {
-      console.log('> Cyber Icon Theme:', red(`Error: ${error}`));
-      throw Error(red(`Error while creating ${fileName} image`));
-    });
+   .catch((error) => {
+  console.error('Full error:', error);  // اطبع الخطأ الحقيقي
+  throw Error(red(`Error while creating ${fileName} image`));
+});
+
 };
 
 init();

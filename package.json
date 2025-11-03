@@ -465,6 +465,7 @@
     "@commitlint/config-conventional": "^19.5.0",
     "@softarc/sheriff-core": "^0.19.0",
     "@types/chroma-js": "^3.1.1",
+    "@types/node": "^24.10.0",
     "@types/puppeteer": "^7.0.0",
     "@types/vscode": "~1.55.0",
     "axios": "^1.7.2",
@@ -478,6 +479,7 @@
     "rimraf": "^6.0.1",
     "svg-color-linter": "^3.0.0",
     "svgo": "^4.0.0",
-    "typescript": "^5.5.4"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
