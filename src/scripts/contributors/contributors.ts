@@ -106,17 +106,17 @@ const init = async () => {
   // create the image
   console.log('> Cyber Icon Theme:', yellow('Creating image...'));
   const fileName = 'contributors';
-  createScreenshot(outputPath, fileName)
-    .then(() => {
-      console.log(
-        '> Cyber Icon Theme:',
-        green(`Successfully created ${fileName} image!`)
-      );
-    })
-    .catch((error) => {
-      console.log('> Cyber Icon Theme:', red(`Error: ${error}`));
-      throw  Error(red(`Error while creating ${fileName} image`));
-    });
+ createScreenshot(outputPath, fileName)
+  .then(() => {
+    console.log('> Cyber Icon Theme:', green(`Successfully created ${fileName} image!`));
+  })
+  .catch((error) => {
+    console.log('> Cyber Icon Theme:', red(`Error: ${error.message}`));
+    // من الأفضل هنا إضافة معلومات إضافية حول الخطأ، مثل:
+    console.error('Details:', error);
+    throw new Error('Error while creating contributors image');
+  });
+
 };
 
 init();
