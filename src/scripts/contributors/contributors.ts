@@ -115,7 +115,7 @@ const init = async () => {
     })
     .catch((error) => {
       console.log('> Cyber Icon Theme:', red(`Error: ${error}`));
-      throw Error(red(`Error while creating ${fileName} image`));
+      throw  Error(red(`Error while creating ${fileName} image`));
     });
 };
 
